@@ -1,0 +1,119 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eea47f;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.section {
+  flex: 1;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fcf6f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+  color: #990011;
+  margin-bottom: 10px;
+}
+
+.flametest,
+.ashtest,
+.submit,
+.clear,
+.heatbtn,
+.aqueous,
+.check {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fcf6f5;
+  background-color: #990011;
+  transition: background-color 0.3s ease;
+}
+
+.flametest:hover,
+.ashtest:hover,
+.submit:hover,
+.clear:hover,
+.heatbtn:hover,
+.aqueous:hover,
+.check:hover {
+  background-color: #7a0011;
+}
+
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.chemi,
+.reag,
+.glassrod,
+.heat {
+  flex: 1;
+  margin: 10px;
+  background-color: #fcf6f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .flametest,
+  .ashtest,
+  .submit,
+  .clear,
+  .heatbtn,
+  .aqueous,
+  .check {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .elements {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chemi,
+  .reag,
+  .glassrod,
+  .heat {
+    width: 100%;
+  }
+}
